@@ -75,4 +75,23 @@ while(xx<10){
   else if(xx==2){cat("lucky number",xx,"\n")}
   else {cat("not excited about the number", xx, "\n")}
   }
-  
+ 
+nn<-10
+RR<-1.1
+for(tt in 1:10){nn[tt+1]<-RR*nn[tt]}
+
+sum(1:20)
+
+#geometric growth exercise
+
+nn<-rep(0,11)
+nn[1]<-100
+rr<-1.05
+tt<-10
+for(tt in 1:10){nn[tt+1]<-rr*nn[tt]}
+print(nn)
+print(nn[tt+1])
+plot(nn,tt)
+plot(1:11, nn)
+plot(nn)
+print(nn[tt+1])
