@@ -59,3 +59,20 @@ for(animal in notfish){cat(animal, "fish\n",1, sep="")}
 #\n for end of string
 for(animal in notfish){cat(animal, "fish"," are tasty\n", sep="")}
 for(animal in notfish){cat(animal, "fish\n", " are tasty\n")}
+#while statements
+xx<-1
+while(xx<5){xx<-xx+1;cat("value of xx", xx,"\n")}
+print(xx)
+while(xx<5){xx<-xx+1;if(xx==3){break;}}
+print(xx)
+while(xx<5){xx<-xx+1;if(xx==3){break;}}
+print(xx)
+#if statements
+while(xx<10){
+  cat("value of xx", xx, "\n")
+  xx<-xx+1;
+  if (xx==7){break;} 
+  else if(xx==2){cat("lucky number",xx,"\n")}
+  else {cat("not excited about the number", xx, "\n")}
+  }
+  
