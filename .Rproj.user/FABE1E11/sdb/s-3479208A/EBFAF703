@@ -1,0 +1,17 @@
+{
+    "contents" : "library(ape)\nlibrary(geiger)\nlibrary(ggplot2)\n#this is my scratch script for practicing R\n",
+    "created" : 1442424097771.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1243424289",
+    "id" : "EBFAF703",
+    "lastKnownWriteTime" : 1442422809,
+    "path" : "~/GitHub/Quantitative-Bootcamp/R-Quantitative Bootcamp/my_first_script.R",
+    "project_path" : "R-Quantitative Bootcamp/my_first_script.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "library(ape)\nlibrary(ggplot2)\nlibrary(geiger)\n#this is my first R script practice\n",
+    "created" : 1442423771314.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3231740435",
+    "id" : "EED831E0",
+    "lastKnownWriteTime" : 1442423982,
+    "path" : "~/GitHub/Quantitative-Bootcamp/my_first_script.R",
+    "project_path" : "my_first_script.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
