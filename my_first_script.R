@@ -24,3 +24,38 @@ dim(dd)[1]
 #tracks data by dflength, number of rows
 dflength<-dim(dd)[1]
 dflength
+#generates random uniform numbers
+?runif
+runif(1)
+#generates random numbers for all sizes in data frame, regardless of data frame length
+size<-runif(dflength)
+size
+#use cbind to add this column to the data
+head(cbind(dd,size))
+newdd<-cbind(dd, size)
+newdd
+head(newdd)
+dd<-cbind(dd,size)
+head(dd)
+head(dd$species)
+?head
+dd[1,]
+#if you want only the MPF swimmers, you can use the which() function
+which(dd$mode=='MPF')
+#returns which dd data matches MPF criteria
+dd$mode=="MPF"
+#returns rows which dd data matches MPF criteria
+dd[which(dd$mode=="MPF"),]
+mpfswimmers<-dd[which(dd$mode=='MPF'),]
+head(mpfswimmers)
+mpfswimmers
+dim(dd)
+length(tt$tip.label)
+#common control statements
+for(ii in 1:5){cat("\nthe number is",ii)}
+notfish<-c("bat", "dolphin", "toad", "soldier")
+for(animal in notfish){cat(animal, "fish\n", sep="")}
+for(animal in notfish){cat(animal, "fish\n",1, sep="")}
+#\n for end of string
+for(animal in notfish){cat(animal, "fish"," are tasty\n", sep="")}
+for(animal in notfish){cat(animal, "fish\n", " are tasty\n")}
