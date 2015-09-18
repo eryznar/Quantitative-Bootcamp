@@ -56,3 +56,47 @@ qqplot
 
 #part h
 lines(1:5, 1:5, col=2)
+
+#Question 2
+
+#part a
+zz=read.table('pheno.sim.2014-1.txt', header=T)
+zz
+
+#part b
+minvalue=quantile(zz[,2],.25)
+desiredrows=which(zz[,2]<minvalue)
+controls=zz[desiredrows,]
+controls
+
+#part c
+desiredrows2=which(zz[,2]>minvalue)
+case=zz[desiredrows2,]
+case
+
+#part d
+plot(density(zz$glucose_mmolperL), col=5, lwd=4, xlab="Value", xlim=c(0,14), main="Blood Glucose Levels")
+abline(v=quantile(zz$glucose_mmolperL, 0.25), lty=2, lwd=1, col=1)
+abline(v=quantile(zz$glucose_mmolperL, 0.75), lty=2, lwd=1, col=1)
+
+#part e
+desiredcaseSNP=snpsDataFrame["rs7584086_T",]
+quantile(desiredcaseSNP, na.rm=TRUE)
+minvaluesnps=0
+minvaluesnps
+case_genotypes=which(desiredcaseSNP<=minvaluesnps)
+case_genotypes
+
+#part f
+quantile(desiredcaseSNP, na.rm=TRUE)
+maxvaluesnps=1
+control_genotypes=which(desiredcaseSNP>maxvaluesnps)
+control_genotypes
+
+#part g
+case_table=table(case_genotypes==0, case_genotypes==1, case_genotypes==2)
+case_table
+
+#part h
+control_table=table(control_genotypes==0, control_genotypes==1, control_genotypes==2)
+control_table
